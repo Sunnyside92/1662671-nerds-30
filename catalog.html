@@ -7,21 +7,27 @@
     <link rel="icon" href="img/favicon.svg" type="image/svg+×ml">
     <link rel="apple-touch-icon" href="img/180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="page-body">
 
-    <header>
-      <a href="index.html">
-        <img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Логотип дизайн-студии 'Nerds'">
-      </a>
-      <ul>
-        <li><a href="blank.html">Студия</a></li>
-        <li><a href="blank.html">Клиенты</a></li>
-        <li><a>Магазин</a></li>
-        <li><a href="blank.html">Контакты</a></li>
-      </ul>
-      <a href="blank.html">Корзина</a>
+    <header  class="main-header">
+      <nav class="main-navigation">
+        <a  class="main-header-logo" href="index.html">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии 'Nerds'">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="blank.html">Студия</a></li>
+          <li><a href="blank.html">Клиенты</a></li>
+          <li><a>Магазин</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+        </ul>
+        <div class="cart-navigation">
+          <a  class="cart-link" href="blank.html">Корзина</a>
+        </div>
+      </nav>
     </header>
 
     <main>
@@ -187,7 +193,7 @@
                   крафтового кваса</p>
                 <a href="blank.html">9900 &#8381;</a>
               </div>
-            </li>                                               
+            </li>
           </ul>
           <ul>
             <li>
@@ -250,9 +256,9 @@
         <textarea name="text-of-letter" id="text-of-letter" rows="4">В свободной форме</textarea>
         <button type="submit">Отправить</button>
       </form>
-      <button type="submit">Закрыть</button>
+      <button type="button">Закрыть</button>
     </section>
 
   </body>
 </html>
- 
+

@@ -7,10 +7,12 @@
     <link rel="icon" href="img/favicon.svg" type="image/svg+×ml">
     <link rel="apple-touch-icon" href="img/180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <a>
+      <a href="index.html">
         <img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Логотип дизайн-студии 'Nerds'">
       </a>
       <ul>
@@ -55,5 +57,21 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </section>
     </footer>
+
+    <section class="modal">
+      <h2>Напишите нам</h2>
+      <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="client-name">Введите ваше имя</label>
+          <input class="user-name" type="text" id="client-name" name="client-name" placeholder="Ваше имя">
+        <label for="client-email">Ваш email</label>
+        <input class="user-email" type="email" id="client-email" name="client-email" placeholder="email@example.com">
+        <label for="text-of-letter">Текст письма</label>
+        <textarea class="note"name="text-of-letter" id="text-of-letter" rows="4">В свободной форме</textarea>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
   </body>
 </html>
