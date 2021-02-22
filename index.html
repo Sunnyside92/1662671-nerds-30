@@ -14,64 +14,64 @@
   <body class="page-body">
 
     <header class="main-header">
-      <nav class="main-navigation">
-        <div class="main-header-bar">
-          <div class="main-navigation-wrapper">
-            <a class="main-header-logo">
-              <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии 'Nerds'">
-            </a>
-            <ul class="site-navigation">
-              <li><a href="blank.html">Студия</a></li>
-              <li><a href="blank.html">Клиенты</a></li>
-              <li><a href="catalog.html">Магазин</a></li>
-              <li><a href="blank.html">Контакты</a></li>
-            </ul>
-            <div class="cart-navigation">
-              <svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" fill="#A6A6A6"/></svg>
-              <a class="cart-link" href="blank.html">Корзина</a>
-            </div>
-          </div>
+      <nav class="main-navigation container">
+        <a class="main-header-logo">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии 'Nerds'">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="blank.html">Студия</a></li>
+          <li><a href="blank.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+        </ul>
+        <div class="cart-navigation">
+          <a class="cart-link" href="blank.html">Корзина</a>
         </div>
       </nav>
     </header>
 
-    <main class="main-container">
+    <main>
 
       <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
 
       <div class="slider">
         <div class="container">
-          <section class="features">
+          <section class="slider-wrapper slider-wrapper-1">
             <h2 class="visually-hidden">Преимущества</h2>
-            <ul class="features-list">
-              <li class="feature-item feature-item-first">
-                <p class="feature-item-accent">Долго, дорого,<br>
+            <ul class="slider-list">
+              <li class="slider-item slide slide-current">
+                <p class="slide-title">Долго, дорого,<br>
                   скрупулезно.</p>
-                <p>
+                <p class="slide-text">
                   Математически выверенный дизайн<br>
                   для вашего сайта или мобильного приложения.
                 </p>
-                <a class="button" href="blank.html">Узнать больше</a>
+                <a class="button slide-button" href="blank.html">Узнать больше</a>
               </li>
-              <li class="feature-item feature-item-second">
-                <p class="feature-item-accent">Любим математику<br>
+              <li class="slider-item slide">
+                <p class="slide-title">Любим математику<br>
                    как никто другой</p>
-                <p>
+                <p class="slide-text">
                   Никакого креатива, только математические формулы<br>
                   для расчета идеальных пропорций
                 </p>
-                <a class="button" href="blank.html">Узнать больше</a>
+                <a class="button slide-button" href="blank.html">Узнать больше</a>
               </li>
-              <li class="feature-item feature-item-third">
-                <p class="feature-item-accent">Только ночь,<br>
+              <li class="slider-item slide">
+                <p class="slide-title">Только ночь,<br>
                   только хардкор</p>
-                <p>
+                <p class="slide-text">
                   Работать днем, как все? Мы против этого.<br>
                   Ближе к полуночи работа только начинается.
                 </p>
-                <a class="button" href="blank.html">Узнать больше</a>
+                <a class="button slide-button" href="blank.html">Узнать больше</a>
               </li>
             </ul>
+            <div class="slider-controls">
+              <button class="current" type="button" aria-label="Первый слайд"></button>
+              <button type="button" aria-label="Второй слайд"></button>
+              <button type="button" aria-label="Третий слайд"></button>
+            </div>
           </section>
         </div>
       </div>
@@ -109,9 +109,6 @@
             </li>
           </ul>
         </section>
-      </div>
-
-      <div class="container">
         <div class="index-columns">
           <section class="about-us">
             <h2 class="visually-hidden">О нас</h2>
@@ -131,7 +128,6 @@
               </ul>
           </section>
           <section class="indicators">
-            <img src="img/nerds-color.png" width="360" height="208" alt="Иллюстрация Нердс">
             <h3>с 2004 года любим точность во всем:</h3>
             <table class="indicators-list">
               <tr>
@@ -140,16 +136,13 @@
                 <td class="indicator">50<sup>%</sup></td>
               </tr>
               <tr>
-                <td>Уровень<br>самоотдачи</td>
-                <td>Соблюдение<br>сроков</td>
-                <td>Минимальная<br>предоплата</td>
+                <td class="indicator-descpription">Уровень<br>самоотдачи</td>
+                <td class="indicator-descpription">Соблюдение<br>сроков</td>
+                <td class="indicator-descpription">Минимальная<br>предоплата</td>
               </tr>
             </table>
           </section>
         </div>
-      </div>
-
-      <div class="container">
         <section class="partners">
           <h2 class="visually-hidden">Партнеры</h2>
           <ul class="partners-list">
@@ -199,19 +192,19 @@
           <ul class="social-list">
             <li>
               <a class="social-button" href="#">
-                <span class="invisible">Вконтакте</span>
+                <span class="visually-hidden">Вконтакте</span>
                 <svg width="27" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.14 11.51c.95-.3 2.18 2.04 3.48 2.94.98.68 1.73.53 1.73.53l3.47-.05s1.82-.1.96-1.55c-.07-.12-.5-1.07-2.59-3.02-2.17-2.05-1.88-1.71.74-5.25 1.6-2.15 2.24-3.46 2.04-4.02-.2-.54-1.37-.4-1.37-.4L20.7.7c-.38 0-.7.12-.85.52 0 0-.62 1.66-1.45 3.08-1.74 2.99-2.43 3.15-2.72 2.96-.66-.43-.5-1.74-.5-2.67 0-2.9.44-4.1-.84-4.41A6.6 6.6 0 0012.5 0c-1.39-.03-2.57 0-3.24.32-.45.23-.79.72-.58.74.26.04.84.16 1.15.59.4.55.4 1.79.4 1.79s.22 3.41-.55 3.83c-.53.3-1.25-.3-2.8-3.01-.8-1.4-1.4-2.92-1.4-2.92s-.1-.29-.32-.45c-.25-.18-.6-.24-.6-.24L.85.68S.29.7.08.95c-.18.21-.01.66-.01.66s2.9 6.89 6.2 10.35c3.02 3.18 6.46 2.97 6.46 2.97h1.55s.47-.05.7-.31c.23-.24.22-.7.22-.7s-.03-2.1.94-2.41z" fill="#fff"/></svg>
               </a>
             </li>
             <li>
               <a class="social-button" href="#">
-                <span class="invisible">Фейсбук</span>
+                <span class="visually-hidden">Фейсбук</span>
                 <svg width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff"/></svg>
               </a>
             </li>
             <li>
               <a class="social-button" href="#">
-                <span class="invisible">Инстаграм</span>
+                <span class="visually-hidden">Инстаграм</span>
                 <svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h15a3 3 0 013 3v15a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm11 10.5a3.5 3.5 0 10-7 0 3.5 3.5 0 007 0zM3 18V9h1.18a6.5 6.5 0 1012.64 0H18v9H3zM14 7h4V3h-4v4z" fill="#fff"/></svg>
               </a>
             </li>
@@ -224,24 +217,26 @@
       </div>
     </footer>
 
+    <!--
     <section class="modal">
       <h2>Напишите нам</h2>
       <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="client-name">Введите ваше имя</label>
-          <input class="user-name" type="text" id="client-name" name="client-name" placeholder="Ваше имя">
-          <label for="client-email">Ваш email</label>
+        <p class="appointment-item appointment-item-name">
+          <label for="client-name">Ваше имя:</label>
+          <input class="user-name" type="text" id="client-name" name="client-name" placeholder="Имя Фамилия">
+        </p>
+        <p class="appointment-item appointment-item-email">
+          <label for="client-email">Ваш email:</label>
           <input class="user-email" type="email" id="client-email" name="client-email" placeholder="email@example.com">
         </p>
-        <p>
-          <label for="text-of-letter">Текст письма</label>
-        <p>
+        <p class="appointment-item appointment-item-letter">
+          <label for="text-of-letter">Текст письма:</label>
           <textarea class="note" name="text-of-letter" id="text-of-letter" rows="5">В свободной форме</textarea>
         </p>
         <button class="button button-no-border" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
-
+-->
   </body>
 </html>
