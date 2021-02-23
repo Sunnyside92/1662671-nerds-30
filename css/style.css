@@ -781,21 +781,20 @@ border-radius: 3px;
 
 .catalog-item {
   position: relative;
-  max-height: 618px;
-  max-width: 580;
+  max-height: 620px;
+  max-width: 360;
   margin: 0 auto;
   padding: 0;
 }
 
-.catalog-item:hover {
-  box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
-  border-radius: 5px;
-  opacity: 1;
+
+.catalog-item:hover .catalog-item-image,
+.catalog-item:focus .catalog-item-image{
+  filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.25));
+  transform: scale(2.2);
 }
 
-
-
-.catalog-item-image::before {
+.catalog-item::before {
   content: "";
   display: block;
   background-image: url("../img/browser.svg");
@@ -808,7 +807,9 @@ border-radius: 3px;
   padding: 0;
 }
 
-
+.catalog-item:hover::before  {
+  opacity: 1;
+}
 
 .catalog-item-image img {
   width: 358px;
@@ -819,17 +820,9 @@ border-radius: 3px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  box-sizing: content-box;
+
 }
-
-.catalog-item-image:hover::before  {
-  opacity: 1;
-}
-
-
-.catalog-item-image img:hover {
-  border: none;
-}
-
 
 .description {
   position: absolute;
@@ -838,6 +831,8 @@ border-radius: 3px;
   display: none;
   width: 360px;
   height: 231px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .catalog-item:hover .description {
