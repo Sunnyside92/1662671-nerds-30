@@ -21,8 +21,6 @@ contactLink.addEventListener("click", function (evt) {
   if (storage) {
     appointmentName.value = storage;
     appointmentEmail.focus();
-  } else {
-    appointmentName.focus();
   }
 });
 
