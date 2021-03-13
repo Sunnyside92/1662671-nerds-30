@@ -38,10 +38,10 @@
 
       <div class="slider">
         <div class="container">
-          <section class="slider-wrapper slider-wrapper-1">
+          <section class="slider-wrapper">
             <h2 class="visually-hidden">Преимущества</h2>
             <ul class="slider-list">
-              <li class="slider-item slide slide-current">
+              <li class="slider-item slide">
                 <p class="slide-title">Долго, дорого,<br>
                   скрупулезно.</p>
                 <p class="slide-text">
@@ -70,9 +70,9 @@
               </li>
             </ul>
             <div class="slider-controls">
-              <button class="current" type="button" aria-label="Первый слайд"></button>
-              <button type="button" aria-label="Второй слайд"></button>
-              <button type="button" aria-label="Третий слайд"></button>
+              <button class="slider-control" type="button" aria-label="Первый слайд" onclick="currentSlide(1)"></button>
+              <button class="slider-control" type="button" aria-label="Второй слайд" onclick="currentSlide(2)"></button>
+              <button class="slider-control" type="button" aria-label="Третий слайд" onclick="currentSlide(3)"></button>
             </div>
           </section>
         </div>
@@ -149,22 +149,22 @@
           <h2 class="visually-hidden">Партнеры</h2>
           <ul class="partners-list">
             <li class="partner-item">
-              <a href="https://htmlacademy.ru/intensive/htmlcss" arial-label="HTML Academy">
+              <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy">
                 <img src="img/icon-htmlacademy.svg" width="199" height="68" alt="HTML Academy">
               </a>
             </li>
             <li class="partner-item">
-              <a href="#" arial-label="Barbershop Borodinski">
+              <a href="#" aria-label="Barbershop Borodinski">
                 <img src="img/icon-borodinski.png"  width="209" height="90" alt="Barbershop Borodinski">
               </a>
             </li>
             <li class="partner-item">
-              <a href="#" arial-label="Pink">
+              <a href="#" aria-label="Pink">
                 <img src="img/icon-pink.png" width="185" height="52" alt="Pink">
               </a>
             </li>
             <li class="partner-item">
-              <a href="#" arial-label="Mishka">
+              <a href="#" aria-label="Mishka">
                 <img src="img/icon-mishka.png" width="173" height="84" alt="Mishka">
               </a>
             </li>
@@ -177,7 +177,7 @@
     <footer class="main-footer">
       <section class="location">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa83ba665ffc3f25630d590e39b31d668afb0259b9985503a5a263f9c3efe6d4f&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;scroll=true"></script>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa83ba665ffc3f25630d590e39b31d668afb0259b9985503a5a263f9c3efe6d4f&amp;source=constructor" height="416"></iframe>
       </section>
       <div class="container footer-grid">
         <section class="footer-contacts">
@@ -239,6 +239,7 @@
       <button class="modal-close" type="button" aria-label="закрыть"></button>
     </section>
 
-  <script src="appointment.js"></script>
+  <script src="appointment_minimize.js"></script>
+  <script src="slide_minimize.js"></script>
   </body>
 </html>
