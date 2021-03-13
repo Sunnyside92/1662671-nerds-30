@@ -63,7 +63,7 @@
               <legend>Сетка:</legend>
               <ul>
                 <li class="filter-option filter-radio">
-                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked tabindex>
                   <label for="filter-adaptive">Адаптивная</label>
                 </li>
                 <li class="filter-option filter-radio">
@@ -286,9 +286,10 @@
         </p>
         <button class="button button-no-border" type="submit">Отправить</button>
       </form>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close" type="button" aria-label="закрыть"></button>
     </section>
 
+  <script src="appointment.js"></script>
   </body>
 </html>
 
