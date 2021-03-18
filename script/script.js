@@ -1,3 +1,4 @@
+//Appoitment form
 const contactLink = document.querySelector(".contact-link");
 const appointmentPopup = document.querySelector(".modal");
 const appointmentClose = appointmentPopup.querySelector(".modal-close");
@@ -52,3 +53,26 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+var slideIndex = 1;
+slider(slideIndex);
+
+//Slide
+
+function currentSlide(n) {
+  slider(slideIndex = n);
+}
+
+function slider(n) {
+  var i;
+  var slides = document.getElementsByClassName("slider-item");
+  var dots = document.getElementsByClassName("slider-control");
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace("active","");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}

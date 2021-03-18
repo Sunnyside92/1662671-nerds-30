@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" href="img/180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/minimize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body class="page-body">
@@ -39,7 +39,7 @@
         <section class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <form class="filter" method="get" action="https://echo.htmlacademy.ru" target="_blank">
-            <fieldset class="filter-item">
+            <fieldset>
               <legend>Стоимость:</legend>
               <div class="range-filter">
                 <div class="range-controls">
@@ -51,10 +51,10 @@
                 </div>
                 <div class="price-controls">
                   <label class="min-price">
-                    от <input type="number" name="min-price" value="0">
+                    от <input type="number" name="min-price" value="0" min="1">
                   </label>
                   <label class="max-price">
-                    до <input type="number" name="max-price" value="15000">
+                    до <input type="number" name="max-price" value="15000" max="15000">
                   </label>
                 </div>
               </div>
@@ -144,8 +144,7 @@
               </a>
               <div class="description">
                 <h3 class="project-name"><a href="#">Sedona</a></h3>
-                <p>Информационный сайт<br>
-                  для туристов</p>
+                <p>Информационный сайт для&nbsp;туристов</p>
                 <button class="button button-price" type="button" aria-label="Добавить в корзину">9 900 &#8381;</button>
               </div>
             </li>
@@ -155,8 +154,7 @@
               </a>
               <div class="description">
                 <h3 class="project-name"><a href="#">Pink app</a></h3>
-                <p>Продуктовый лендинг<br>
-                  приложения для iOS и Android</p>
+                <p>Продуктовый лендинг приложения для iOS и Android</p>
                 <button class="button button-price" type="button" aria-label="Добавить в корзину">9 900 &#8381;</button>
               </div>
             </li>
@@ -166,8 +164,7 @@
               </a>
               <div class="description">
                   <h3 class="project-name"><a href="#">Barbershop</a></h3>
-                  <p>Сайт салона красоты.<br>
-                    Для мужчин, да.</p>
+                  <p>Сайт салона красоты. Для&nbsp;мужчин, да.</p>
                   <button class="button button-price" type="button" aria-label="Добавить в корзину">9 900 &#8381;</button>
               </div>
             </li>
@@ -177,8 +174,7 @@
               </a>
               <div class="description">
                 <h3 class="project-name"><a href="#">Mishka</a></h3>
-                <p>Интернет-магазин<br>
-                  вязаных игрушек</p>
+                <p>Интернет-магазин вязаных&nbsp;игрушек</p>
                 <button class="button button-price" type="button" aria-label="Добавить в корзину">9 900 &#8381;</button>
               </div>
             </li>
@@ -188,8 +184,7 @@
               </a>
               <div class="description">
                 <h3 class="project-name"><a href="#">A plus</a></h3>
-                <p>Лендинг курсов повышения <br>
-                  квалификации</p>
+                <p>Лендинг курсов повышения квалификации</p>
                 <button class="button button-price" type="button" aria-label="Добавить в корзину">9 900 &#8381;</button>
               </div>
             </li>
@@ -199,8 +194,7 @@
               </a>
               <div class="description">
                 <h3 class="project-name"><a href="#">Кваст</a></h3>
-                <p>Промо-сайт производителя<br>
-                  крафтового кваса</p>
+                <p>Промо-сайт производителя крафтового кваса</p>
                 <button class="button button-price" type="button" aria-label="Добавить в корзину">9 900 &#8381;</button>
               </div>
             </li>
@@ -289,7 +283,7 @@
       <button class="modal-close" type="button" aria-label="закрыть"></button>
     </section>
 
-  <script src="appointment_minimize.js"></script>
+  <script src="script/script.min.js"></script>
   </body>
 </html>
 
