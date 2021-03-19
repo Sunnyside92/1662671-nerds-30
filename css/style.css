@@ -472,7 +472,7 @@ img {
 
 .indicators::before {
   content: "";
-  display: inline-block;
+  display: block;
   width: 360px;
   height: 208px;
   background-image: url("../img/nerds-color.png");
@@ -480,10 +480,11 @@ img {
   background-repeat: no-repeat;
 }
 
+
 .indicators h3 {
   margin: 0;
   padding: 0;
-  margin: 31px 0px 29px 17px;
+  margin: 37px 0px 29px 18px;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
@@ -495,11 +496,11 @@ img {
 }
 
 .indicators-list td {
-  padding-right: 15px;
+  padding-right: 16px;
 }
 
 .indicator {
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   font-weight: bold;
   font-size: 45px;
   line-height: 64px;
