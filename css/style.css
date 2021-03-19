@@ -996,7 +996,7 @@ margin: 0;
   opacity: 1;
 }
 
-.down-up-item a path {
+.down-up-item path {
   opacity: 0.2;
 }
 
@@ -1006,7 +1006,7 @@ margin: 0;
 }
 
 .down-up-item:active path,
-.down-up-item-current a:not([href]) path {
+.down-up-item-current path {
   fill:#231F20;
   opacity: 1;
 }
